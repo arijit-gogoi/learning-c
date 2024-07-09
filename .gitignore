@@ -1,5 +1,6 @@
 # Prerequisites
 *.d
+*.pdb
 
 # Object files
 *.o
