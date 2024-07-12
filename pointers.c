@@ -17,8 +17,8 @@ int main(void) {
   *p += 1;  
   printf("Addrs of i: %p, Value of i: %d\n", (void *)&i, i);
   printf("Addrs of p: %p, Value of p: %p\n", (void *)&p, p);
-
   puts("\n");
+  
   // Dereferencing enables passing pointers to functions.
   printf("i = %d\n", i); // i = 11
   
@@ -29,5 +29,12 @@ int main(void) {
   addone(p);
   printf("addone(p)\n");
   printf("i = %d\n", *p);
+  puts("\n");
+
+  // `sizeof` is a unary operator
+  // it operates on the type of the expression
+  printf("size of type int:%zu\n", sizeof(int));
+  printf("p is type int* and size: %zu\n", sizeof p);
+  printf("*p is type int and size: %zu\n", sizeof *p);
 }
 
